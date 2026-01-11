@@ -1,0 +1,129 @@
+\documentclass[10pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+                       
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+\usepackage{setspace}
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+
+% resume starts here
+\begin{document}
+\fontfamily{phv}\selectfont 
+% name
+\centerline{\Huge \textbf{Lorenzo Vecchietti}}
+
+\vspace{5pt}
+
+% contact information
+\centerline{\href{mailto:lorenzo.vecchietti.1997@gmail.com}{lorenzo.vecchietti.1997@gmail.com} | \href{https://github.com/lorenzovecchietti}{github.com/lorenzovecchietti}}
+
+\vspace{-10pt}
+
+% skills section
+\section*{Skills}
+%\textbf{Models of innovation:} Dynamics of Innovation, Theory of Competitive Advantage, Innovation Strategy as the Management of Competencies, Designing Products and Services\\
+\textbf{Programming:} Python \textit{(Pandas, NumPy, MatPlotLib, pyTorch, pyAnsys, fenicsX)}, C++, SQL, Bash, GitHub \\
+\textbf{CAE:} Abaqus, OpenFOAM, Paraview, Ansys Fluent, Ansys Icepak, Ansys Mechanical
+
+\vspace{-6.5pt}
+
+% Honors&Awards section
+\section*{Honors \& Awards}
+\textbf{Ansys LLM Hackathon}, \textit{1st place}, Automate video suggestions via internal docs \&  YouTube comments. \hfill 2024 \\ 
+\textbf{Ansys Best Application Engineer}, Award for at the best application engineers, assigned on a quarterly base. \hfill 2024 \\
+\textbf{Ansys Hackathon}, \textit{2nd place}, Automatic post‑processing with AI. \hfill 2023 \\ 
+\textbf{Alta Scuola Politecnica Scholarship}, offered to the top 1\% of M.S. students of Milan and Turin Politecnico. \hfill 2020 \\
+\textbf{Best freshmen award}, Award aimed at the best freshmen of Politecnico di Milano \hfill 2017 \\
+
+\vspace{-6.5pt}
+% experience section
+\section*{Experience}
+\textbf{Senior Application Engineer,} \href{https://www.ansys.com/}{Synopsys} -- Milan, IT
+\hfill Jan. 2026 -- Present\\
+\textbf{Application Engineer II,} \href{https://www.ansys.com/}{Ansys} -- Milan, IT
+\hfill Feb. 2024 -- Jan. 2026\\
+\textbf{Application Engineer,} \href{https://www.ansys.com/}{Ansys} -- Milan, IT \hfill Sept. 2022 -- Feb. 2024 \\
+\vspace{-8.8pt}
+{\setstretch{0.8}
+\begin{itemize}
+  \item Handling 100\% of application engineering for electro-thermal management problems with SimAI, Ansys Deep Learning offering.
+  \item Used Ansys Icepak and Fluent to solve complex electro-thermal management problems. Streamlined simulation workflows, reducing manual tasks and enhancing efficiency for simulation teams.
+  \item Primary contributor to pyAEDT, automating Ansys Electronic Desktop simulations. Increased Icepak functionality coverage from $\sim$30\% to $\sim$95\%, unlocking new business opportunities.
+  \item Tasked with leveraging my pyAEDT expertise to rapidly turn around a multi-million-euro project for a top 3 EMEA client. Delivered the necessary improvements ahead of schedule.
+  \item Led and contributed to a client project, enhancing code speed 10x through vectorization and optimized use of Lapack libraries. Independently handled key UX decisions that was key in the client's purchase positive decision. The project will become a new tool in the Ansys portfolio.
+\end{itemize}
+}
+
+
+\textbf{FEA Engineer,} \href{https://www.pirelli.com/tyres/}{Pirelli} -- Milan, IT \hfill Feb. 2022 -- Aug. 2022 \\
+\vspace{-8.8pt}
+{\setstretch{0.8}
+\begin{itemize}
+  \item Tasked with simulating the complex behavior of motorsport tires across single-seater, rally, and GT championships to enhance tire performance analysis
+  \item Introduced automation processes that reduced manual tasks, speeding up pre-processing by 3x
+  \item Addressed longstanding HPC queuing logic issues
+  \item Successfully field-tested a custom-made mesher
+\end{itemize}
+}
+
+\vspace{-18.5pt}
+
+% education section
+\section*{Education}
+\href{https://www.asp-poli.it/}{\textbf{Alta Scuola Politecnica} } -- Milan, IT \hfill Sept. 2019 - Sept. 2021 \\
+Multidisciplinary and honour program created by Politecnico di Milano and Politecnico di Torino for the top 1\% of students. Courses on issues, models and methods of innovation, tackled with a strong interdisciplinary perspective.\\
+\textbf{\href{https://www.polimi.it/}{Politecnico di Milano}} -- M.S. in aerodynamic engineering, 110/110 with honors \hfill 2021 \\
+Specializing in Turbulence, Numerical methods and Optimization Research. \\
+\textbf{\href{https://www.polimi.it/}{Politecnico di Milano}} -- B.S. in aerospace engineering, 110/110 with honors \hfill 2019
+
+\section*{Extracurricular Activities}
+\vspace{5.8pt}
+\textbf{Aerodynamic \& CFD Engineer} \href{https://www.dynamisprc.com/}{Dynamis PRC} -- Milan, IT \hfill Sept. 2017 - Sept. 2020 \\
+\vspace{-8.8pt}
+{\setstretch{0.8}
+    \begin{itemize}
+        \item Introduced advanced simulation technique (RANS, SAS, fans, moving meshes and porous media)
+        \item Enhanced team collaboration as I made simulations standardized, comparable and partially on cloud
+        \item Improved design accuracy with multiple wins in FSAE design challenges
+        \item Improved credibility with sponsors with new simulation tools (SimScale) and HPC (Lenovo) obtained
+    \end{itemize}
+}
+\vspace{-18.5pt}
+
+
+% projects section
+\section*{Projects}
+\textbf{STLIMB} \hfill \href{https://home.aero.polimi.it/quadrio/it/Tesi/vecchietti/vecchietti.html}{\underline{Thesis}}, \href{https://github.com/lorenzovecchietti/DNSimb}{\underline{GitHub}} \\
+\vspace{-8pt}
+{\setstretch{0.8}
+\begin{itemize}
+  \item I developed a CFD code based on the immersed boundary method.
+  \item The code proved to be 25 times faster than OpenFOAM and
+requires 70\% less memory. 
+\end{itemize}
+}
+\vspace{-18.5pt}
+
+
+
+\end{document}
